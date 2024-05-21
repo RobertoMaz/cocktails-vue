@@ -7,12 +7,6 @@ export const useNotificacionStore = defineStore('notificaciones', () => {
     const error = ref(false)
     const mostrar = ref(false)
 
-    // function $reset() {
-    //     texto.value = ''
-    //     error.value = false
-    //     mostrar.value = false
-    // }
-
     watch(mostrar,() => {
         if(mostrar.value){
             setTimeout(() => {

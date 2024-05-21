@@ -11,15 +11,12 @@
     const paginaInicio = computed(() => route.name === 'inicio')
 
     const handleSubmit = () => {
-
         if(Object.values(store.busqueda).includes('')){
             notificaciones.texto = 'Todos los campos son obligatorios'
             notificaciones.mostrar = true
             notificaciones.error = true
-
             return
         }
-
         store.obtenerRecetas()
     }
 </script>

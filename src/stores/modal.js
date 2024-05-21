@@ -8,7 +8,6 @@ export const useModalStore = defineStore('modal', () => {
     const modal = ref(false)
 
     const favoritos = userFavoritosStore()
-    const bebidas = useBebidasStore()
 
     function handleClickModal() {
         modal.value = !modal.value
@@ -22,6 +21,5 @@ export const useModalStore = defineStore('modal', () => {
         modal,
         textoBoton,
         handleClickModal
-
     }
 })

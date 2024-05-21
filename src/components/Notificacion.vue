@@ -1,12 +1,9 @@
 <script setup>
     import {CheckCircleIcon, XCircleIcon} from '@heroicons/vue/24/outline'
     import {XMarkIcon} from '@heroicons/vue/20/solid'
-    import { ref } from 'vue'
     import { useNotificacionStore } from '@/stores/notificaciones'
 
     const notificaciones = useNotificacionStore()
-
-  
 </script>
 
 <template>

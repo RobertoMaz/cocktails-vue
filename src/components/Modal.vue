@@ -1,4 +1,3 @@
-
 <script setup>
     import { Dialog, DialogPanel, DialogTitle, TransitionChild, TransitionRoot } from '@headlessui/vue'
     import { useModalStore } from '@/stores/modal'

@@ -9,9 +9,7 @@
     <Header />
 
     <main class="container mx-auto mt-10">
-        <RouterView 
-            
-        />
+        <RouterView />
     </main>
     
     <Modal />
