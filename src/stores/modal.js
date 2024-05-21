@@ -1,16 +1,26 @@
 import { defineStore } from "pinia"
-import { ref } from "vue"
+import { computed, ref } from "vue"
+import { userFavoritosStore } from "./favoritos"
+import { useBebidasStore } from "./bebidas"
 
 export const useModalStore = defineStore('modal', () => {
 
     const modal = ref(false)
 
+    const favoritos = userFavoritosStore()
+    const bebidas = useBebidasStore()
+
     function handleClickModal() {
         modal.value = !modal.value
     }
 
+    const textoBoton = computed(() => {
+        return favoritos.existeFavorito() ? 'Eliminar de Favoritos' : 'Agregar a favoritos'
+    })
+
     return {
         modal,
+        textoBoton,
         handleClickModal
 
     }
