@@ -58,19 +58,6 @@
             >
                 <div class="space-y-2">
                     <label 
-                        for="ingrediente"
-                        class="block text-white uppercase font-extrabold text-md"
-                    >Nombre o Ingredientes</label>
-                    <input 
-                        id="ingrediente"
-                        type="text"
-                        class="p-1 w-full rounded-lg focus:outline-none"
-                        placeholder="Nombre o ingrediente"
-                        v-model="store.busqueda.nombre"
-                    >
-                </div>
-                <div class="space-y-2">
-                    <label 
                         for="categoria"
                         class="block text-white uppercase font-extrabold text-md"
                     >Categoria</label>

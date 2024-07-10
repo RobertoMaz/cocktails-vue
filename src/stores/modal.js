@@ -1,7 +1,6 @@
 import { defineStore } from "pinia"
 import { computed, ref } from "vue"
 import { userFavoritosStore } from "./favoritos"
-import { useBebidasStore } from "./bebidas"
 
 export const useModalStore = defineStore('modal', () => {
 

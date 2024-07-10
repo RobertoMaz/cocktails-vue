@@ -9,7 +9,6 @@ export const useBebidasStore = defineStore('bebidas', () => {
     const recetas = ref([])
     const receta = ref({})
     const busqueda = reactive({
-        nombre: '',
         categoria: ''
     })
 
